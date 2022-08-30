@@ -35,9 +35,11 @@ function writePassword() {
   }
   console.log(pwdOpts)
 
-
-
   
+
+
+
+
   var password = generatePassword();
   // This refers to the <textarea> element ⬇️
   var passwordText = document.querySelector("#password");
