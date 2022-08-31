@@ -20,27 +20,29 @@ function writePassword() {
   var lcType = confirm("Do you want lowercase letters?"); 
   if (lcType){
     pwdOpts.push('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z')
-  } 
+  };
   var ucType = confirm("Do you want UpperCase Letters?");
   if (ucType){
     pwdOpts.push('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z')
-  }
+  };
   var numType = confirm("Do you want numeric characters?");
   if (numType){
     pwdOpts.push('0', '1', '2', '3', '4', '5', '6', '7', '8', '9')
-  }
+  };
   var scType = confirm("Do you want to include special characters?")
   if (scType){
     pwdOpts.push('!', '@', '#', '$', '%', '^', '&', '*', '(', ')')
-  }
-  console.log(pwdOpts)
+  };
+  console.log(pwdOpts);
 
+  function generatePassword(pwdLength, pwdOpts) {
+    for (i = 0; i < pwdLength; i++) {
+      pwdOpts[Math.floor(Math.random() * pwdOpts.length)]
+    } console.log(pwdOpts)
+  } 
   
-
-
-
-
   var password = generatePassword();
+
   // This refers to the <textarea> element ⬇️
   var passwordText = document.querySelector("#password");
 
