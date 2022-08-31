@@ -35,25 +35,21 @@ function writePassword() {
   };
   console.log(pwdOpts);
   
-
-  function generatePassword(pwdLength, pwdOpts) {
-    var pwd = [];
-    for (i = 0; i < pwdLength; i++) {
-      pwd.push(pwdOpts[i][Math.floor(Math.random() * pwdOpts.length)]);
-    }
+  function generatePassword(pwdLength, pwdOpts)  {
+    let pwd = [];
+    for (let i = 0; i < pwdLength; i++) {
+      pwd.push(pwdOpts[Math.floor(Math.random() * pwdOpts.length)]);
+    };
      console.log(pwd)
      return pwd
   } 
   
-  var password = generatePassword();
-
+  // .join puts the individual elements together into one string so that there aren't commas between each character. 
+  var password = generatePassword(pwdLength, pwdOpts).join('');  
   // This refers to the <textarea> element ⬇️
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
-
   return
-
 }
 
 // Add event listener to generate button
