@@ -27,7 +27,7 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: #2c6d9f;
 }
 
 .card {
@@ -35,7 +35,7 @@ header {
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: #4f80a5;
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
@@ -98,7 +98,8 @@ button[disabled] {
 }
 
 #password {
-  background-color: rgb(192, 81, 81);
+  color: #30d321;
+  background-color: #000000;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
