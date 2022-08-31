@@ -19,7 +19,7 @@ It then outputs the password to a text field so that it can be copied by the use
 
 - Click on OK or Cancel when asked if you would like lowercase letters, uppercase letters, numbers, or specials characters in your password.   
 
-![image of website](./assets/images/demo.gif)
+![image of website](./Assets/images/demo.gif)
 
 ## Credits 
 
