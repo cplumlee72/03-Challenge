@@ -34,11 +34,15 @@ function writePassword() {
     pwdOpts.push('!', '@', '#', '$', '%', '^', '&', '*', '(', ')')
   };
   console.log(pwdOpts);
+  
 
   function generatePassword(pwdLength, pwdOpts) {
+    var pwd = [];
     for (i = 0; i < pwdLength; i++) {
-      pwdOpts[Math.floor(Math.random() * pwdOpts.length)]
-    } console.log(pwdOpts)
+      pwd.push(pwdOpts[i][Math.floor(Math.random() * pwdOpts.length)]);
+    }
+     console.log(pwd)
+     return pwd
   } 
   
   var password = generatePassword();
